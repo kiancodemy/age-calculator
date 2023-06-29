@@ -45,6 +45,7 @@ input {
   background-color: #fee2cd;
   padding: 20px;
   border-radius: 20px;
+  box-shadow: 0 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 .form {
   display: flex;
@@ -79,6 +80,8 @@ input {
 .two,
 .three {
   margin-right: 5px;
+  font-size: 72px;
+  color: #f86f03;
 }
 @media screen and (max-width: 600px) {
   .form {
@@ -105,5 +108,21 @@ input {
   }
   body {
     background-color: #fff;
+  }
+  .one,
+  .two,
+  .three {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .one,
+  .two,
+  .three {
+    font-size: 32px;
+  }
+  h1 {
+    font-size: 32px;
   }
 }
