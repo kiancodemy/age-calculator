@@ -7,7 +7,7 @@
 .section {
   height: 100vh;
   width: 100vw;
-  background-color: azure;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,27 +83,28 @@ input {
   font-size: 72px;
   color: #f86f03;
 }
+
 @media screen and (max-width: 600px) {
   .form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 5px;
+    flex-direction: column;
+    gap: 8px;
   }
+
   h1 {
     font-size: 28px;
   }
-  .container {
-    width: 100%;
-    height: 100%;
-  }
+
   form div {
     justify-content: stretch;
     gap: 2px;
   }
   .btn {
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
     font-size: 15px;
   }
   body {
@@ -114,13 +115,44 @@ input {
   .three {
     font-size: 20px;
   }
+
+  .section {
+    background-color: #fff;
+  }
 }
 
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 48px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+  .btn {
+    padding: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 @media screen and (max-width: 900px) {
+  .form {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  h1 {
+    font-size: 35px;
+  }
   .one,
   .two,
   .three {
-    font-size: 32px;
+    font-size: 35px;
   }
   h1 {
     font-size: 32px;
